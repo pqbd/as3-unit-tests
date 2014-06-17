@@ -30,6 +30,8 @@ package alx.common.test
     /**
      * Inits framework.
      * @param testerClass Class
+     * @param nDisplayMode uint
+     * @param bShowCallStack Boolean
      */
     public static function init( testerClass:Class
                                 , nDisplayMode:uint
@@ -131,7 +133,7 @@ package alx.common.test
     {
       trace( strValue);
     }
-    /** Prints results*/  
+    /** Prints results*/
     public static function printResult( display:DisplayObject = null):void
     {
       var nColor:uint = 0;
@@ -160,7 +162,7 @@ package alx.common.test
      */
     public static function run( arUnitTest:Array):void
     {
-      for ( var i:int; (( i < arUnitTest.length) && ( true)); i++)
+      for ( var i:int; (( i < arUnitTest.length) && ( !CUnitTests.isError())); i++)
       {
         var unitTestClass:Class = arUnitTest[ i];
         new unitTestClass( unitTestClass);
@@ -175,7 +177,7 @@ package alx.common.test
     public static function functionToString( target:Object, fun:Function):String
     {
       var strFunctionName:String = 'error';
-      var type:XML = describeType( target);  
+      var type:XML = describeType( target);
       for each ( var node:XML in type..method)
       {
         if ( target[ node.@name] == fun)

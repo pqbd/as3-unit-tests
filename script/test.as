@@ -1,4 +1,5 @@
 import alx.common.test.*;
+import alx.common.test.CExampleUnitTest;
 
 // refactoring
 //CUnitTests.init( CTester, CUnitTests.SIMPLE_MODE, true);
@@ -7,7 +8,7 @@ import alx.common.test.*;
 //CUnitTests.init( CTester, CUnitTests.FULL_MODE, true);
 CUnitTests.init( CTester, CUnitTests.FULL_MODE, false);
 
-CUnitTests.run( new Array( 
+CUnitTests.run( new Array( CExampleUnitTest
                           )
                 );
 CUnitTests.printResult( root);
