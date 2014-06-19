@@ -8,7 +8,6 @@ import alx.common.test.CExampleUnitTest;
 //CUnitTests.init( CTester, CUnitTests.FULL_MODE, true);
 CUnitTests.init( CTester, CUnitTests.FULL_MODE, false);
 
-CUnitTests.run( new Array( CExampleUnitTest
-                          )
-                );
+CUnitTests.run( CExampleUnitTest
+              );
 CUnitTests.printResult( root);

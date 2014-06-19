@@ -160,7 +160,7 @@ package alx.common.test
      * Runs unit tests.
      * @param arUnitTest Array of Class exteds CUnitTest
      */
-    public static function run( arUnitTest:Array):void
+    public static function run( ...arUnitTest):void
     {
       for ( var i:int; (( i < arUnitTest.length) && ( !CUnitTests.isError())); i++)
       {
