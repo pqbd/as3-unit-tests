@@ -1,5 +1,5 @@
 import alx.common.test.*;
-import alx.common.test.CExampleUnitTest;
+import test.alx.common.test.CExampleUnitTest;
 
 // refactoring
 //CUnitTests.init( CTester, CUnitTests.SIMPLE_MODE, true);

@@ -1,4 +1,4 @@
-package alx.common.test
+package test.alx.common.test
 {
   import alx.common.test.CUnitTest;
 
