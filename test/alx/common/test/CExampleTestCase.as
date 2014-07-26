@@ -1,19 +1,12 @@
 package test.alx.common.test
 {
-  import alx.common.test.CUnitTest;
+  import alx.common.test.CTestCase;
 
-  public class CExampleUnitTest extends CUnitTest
+  public class CExampleTestCase extends CTestCase
   {
-    public function CExampleUnitTest( strLabel:String):void
+    public function CExampleTestCase():void
     {
-      super( strLabel);
-    }
-
-    protected override function testList():Array
-    {
-      return new Array( this.testSum
-                      , this.testMult
-                      );
+      super();
     }
 
     public function testSum():void
