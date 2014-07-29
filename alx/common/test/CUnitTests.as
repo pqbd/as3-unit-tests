@@ -44,8 +44,7 @@ package alx.common.test
       CUnitTests.s_testerFactory = new CTesterFactory( testerClass);
       CUnitTests.s_logFactory = new CLogFactory( logClass, nDisplayMode, bShowCallStack);
       CUnitTests.s_nDisplayMode = nDisplayMode;
-      CUnitTests.s_bShowCallStack = bShowCallStack;
-      CUnitTests.printHeader();
+      CUnitTests.s_bShowCallStack = bShowCallStack;      
     }
     /** Prints header.*/
     protected static function printHeader():void
@@ -130,6 +129,7 @@ package alx.common.test
     public static function printResult( display:DisplayObject = null):void
     {
       var nColor:uint = 0;
+      CUnitTests.printHeader();
       if ( CUnitTests.s_mainTestSuite != null)
         CUnitTests.printLine( CUnitTests.s_mainTestSuite.getLog().toString());
       if ( CUnitTests.isError())
