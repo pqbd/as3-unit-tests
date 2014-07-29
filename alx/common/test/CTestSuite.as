@@ -81,7 +81,7 @@ package alx.common.test
       {
         this.getLog().addLine( e.toString(), CUnitTests.SIMPLE_MODE);
         this.getLog().addLine( e.getStackTrace(), CUnitTests.SIMPLE_MODE, true);
-       }
+      }
       finally
       {
         if ( this.getTester().isError())
