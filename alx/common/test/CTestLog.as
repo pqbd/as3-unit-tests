@@ -15,10 +15,7 @@ package alx.common.test
     /** Callstack info reation setting*/
     private var m_bShowCallStack:Boolean;
 
-    /**
-     * Creates tester.
-     * @param strLabel String
-     */
+    /** Creates log.*/
     public function CTestLog():void
     {
       this.clear()
