@@ -80,7 +80,7 @@ package alx.common.test
                 this.before();
                 this[ strFuctionName].apply( this, null);
               }
-              catch( e:Error)
+              catch ( e:Error)
               {
                 this.getLog().addLine( e.toString(), CUnitTests.SIMPLE_MODE);
                 this.getLog().addLine( e.getStackTrace(), CUnitTests.SIMPLE_MODE, true);
@@ -95,7 +95,7 @@ package alx.common.test
                 {
                   this.after();
                 }
-                catch( e:Error)
+                catch ( e:Error)
                 {
                   this.getLog().addLine( e.toString(), CUnitTests.SIMPLE_MODE);
                   this.getLog().addLine( e.getStackTrace(), CUnitTests.SIMPLE_MODE, true);
@@ -116,7 +116,7 @@ package alx.common.test
             }
           }
         }
-        catch( e:Error)
+        catch ( e:Error)
         { 
           throw e;
         }
@@ -126,7 +126,7 @@ package alx.common.test
           {
             this.end();
           }
-          catch( e:Error)
+          catch ( e:Error)
           {
             this.getLog().addLine( e.toString(), CUnitTests.SIMPLE_MODE);
             this.getLog().addLine( e.getStackTrace(), CUnitTests.SIMPLE_MODE, true);

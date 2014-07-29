@@ -45,9 +45,7 @@ package alx.common.test
       for ( var i:int = 0; i < nOffset; i++)
         strOffset += "\t";
       for ( i = 0; i < this.m_arLine.length; i++)
-      {
         strResult += this.m_arLine[ i].replace( /^(\t*)/mg, '$1'+strOffset)+"\n";
-      }
       return strResult;
     }
     public function clear():ITestLog

@@ -63,6 +63,6 @@ package alx.common.test
      * Checks if was an error while test process.
      * @return Boolean
      */
-    function isError():Boolean;    
+    function isError():Boolean;
   }
 }
